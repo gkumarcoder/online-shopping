@@ -1,0 +1,187 @@
+/*!
+ * Start Bootstrap - Shop Homepage (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+html {
+	height:100%;
+}
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    height:100%;
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+footer {
+    margin: 0;
+}
+
+
+/*
+	custom styling
+*/
+
+.wrapper {	
+	min-height:100%;
+	position: relative;
+}
+
+
+.content {
+	padding-bottom: 60px; /*height of the footer*/	
+}
+
+
+.footer {
+	
+	position:absolute;
+	bottom:15px;
+	height: 60px;
+	
+}
+
+
+.dataTableImg {
+	
+	width:100px;
+	height: 100px;
+	
+}
+
+.help-block {
+	color: #ff0000;
+}
+
+.adminDataTableImg {
+	height:50px;
+	width: 50px;
+}
+
+/*Toggle Switch*/
+.switch {
+    width: 50px;
+    height: 30px;
+    position:relative;
+    display: inline-block;
+}
+
+.switch input {
+    display:none;
+}
+
+.slider {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+
+.slider:before {
+    position:absolute;
+    background-color: #fff;
+    height: 20px;
+    width:20px;
+    content: "";
+    left: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+input:checked + .slider {
+    background-color: #1863E6;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.table-responsive {
+	overflow-x: inherit; 
+}
+
+
+/*cart css*/
+.table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control{
+		width:20%;
+		display: inline !important;
+	}
+	.actions .btn{
+		width:36%;
+		margin:1.5em 0;
+	}
+	
+	.actions .btn-info{
+		float:left;
+	}
+	.actions .btn-danger{
+		float:right;
+	}
+	
+	table#cart thead { display: none; }
+	table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
+	table#cart tbody tr td:first-child { background: #333; color: #fff; }
+	table#cart tbody td:before {
+		content: attr(data-th); font-weight: bold;
+		display: inline-block; width: 8rem;
+	}
+	
+	
+	
+	table#cart tfoot td{display:block; }
+	table#cart tfoot td .btn{display:block;}
+	
+}
+
